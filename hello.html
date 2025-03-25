@@ -1,9 +1,39 @@
+<!DOCTYPE html>
 <html>
 <body>
+<head>
+<style>
+.centre {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.normalbutton {
+    width: 250px;
+    height: 60px;
+    border-radius: 12px;
+}
+</style>
+</head>
 
-<h1 style="text-align:center;">Coup 2</h1>
 
-<button style="text-align: " type="button" oneclick="location.href=join.html">join room</button>
+<h1 style="text-align:center;"><br><br><br><br><br><br>Coup 2</h1><br><br>
+
+<button class="centre normalbutton" onclick="location.href=/workspaces/C2D-HTML/create.html">Create room</button><br>
+<button class="centre normalbutton" onclick="location.href=/workspaces/C2D-HTML/join.html">Join room</button>
 
 <script src="JS.js"></script>
 
