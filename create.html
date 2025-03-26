@@ -1,8 +1,37 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
 
-<h1 style="text-align:center;">Join room</h1>
+        <h1 style="text-align:center;"><br><br><br><br><br><br>Create room</h1><br>
 
-</body>
+        <p class="centre_text">Your name: <input type="text" id="host_name"></p>
+        <button class="centre createbutton";" onclick="create_code()">Create new room</button>
+
+        <script>
+        function create_code() {
+            const fs = require("fs");
+            var x = document.getElementById("host_name").value;
+            alert(x);
+
+            const data = fs.readFileSync('communicate.json');
+            const jsonData = JSON.parse(data);
+
+            jsonData.users.push({
+                x: undefined
+            });
+
+
+            const jsonString = JSON.stringify(jsonData);
+
+            fs.writeFileSync('code.json', jsonString, 'utf-8', (err) => {
+            if (err) throw err;
+            console.log('Data added to file');
+            });
+        }
+</script>
+
+    </body>
 </html>
