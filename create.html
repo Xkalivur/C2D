@@ -8,12 +8,12 @@
         <h1 style="text-align:center;"><br><br><br><br><br><br>Create room</h1><br>
 
         <p class="centre_text">Your name: <input type="text" id="host_name"></p>
-        <button class="centre createbutton";" onclick="create_code()">Create new room</button>
+        <button class="centre createbutton" onclick="addcode()">Create new room</button>
 
-        <script>
+        <script defer src="func.js">
+            import fs from 'fs'
         function create_code() {
-            const fs = require("fs");
-            var x = document.getElementById("host_name").value;
+            let x = document.getElementById("host_name").value;
             alert(x);
 
             const data = fs.readFileSync('communicate.json');
@@ -26,12 +26,14 @@
 
             const jsonString = JSON.stringify(jsonData);
 
-            fs.writeFileSync('code.json', jsonString, 'utf-8', (err) => {
+            fs.writeFileSync('code.json', jsonString, (err) => {
             if (err) throw err;
             console.log('Data added to file');
             });
-        }
-</script>
+        
+        }  
+
+</script> 
 
     </body>
 </html>
