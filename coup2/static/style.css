@@ -1,0 +1,44 @@
+.centre {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.centre_text{
+    position:relative;
+    text-align: center;
+}
+
+.normalbutton {
+    width: 250px;
+    height: 60px;
+    border-radius: 12px;
+    padding: 15px 32px;
+}
+
+.roombutton{
+    width: 300px;
+    height: 30px;
+    border-radius: 12px;
+    padding: 7.5px 32px;
+}
+
+.createbutton{
+    width: 250px;
+    height: 30px;
+    border-radius: 12px;
+    padding: 7.5px 32px;
+}
