@@ -6,6 +6,10 @@ app = Flask(__name__,template_folder="templates")
 def hello():
     return render_template('start.html')
 
+@app.route("/create")
+def create():
+    return render_template('create.html')
+
 @app.route('/process', methods=['POST'])
 def process():
     data = request.form.get('data')
