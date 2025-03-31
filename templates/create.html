@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create room</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <h1 style="text-align:center;"><br><br><br><br><br><br>Coup 2</h1><br><br>
+    <h2 style="text-align:center;">Create room</h2>
+    
+    <p class="centre_text">Your name: <input type="text" id="host_name"></p>
+    <button class="centre createbutton" onclick="sendData()">Create new room</button>
+    <p class="centre_text">Your room code: <div id="output_code" class="box_code"></div></p>
+    <p class="centre_text">Player list: <div id="output_name" class="box_list"></div></p>
+    
+    <script>
+        function sendData() {
+            var value = document.getElementById('host_name').value;
+            $.ajax({
+                url: '/process',
+                type: 'POST',
+                data: { 'data': value },
+                success: function(response) {
+                    document.getElementById('output_name').innerHTML = response;
+                    console.log(value)
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
+        }
+    </script> 
+</body>
+</html>
