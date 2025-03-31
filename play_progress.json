@@ -1,0 +1,35 @@
+{
+      "player1": [
+            "inquisitor",
+            "captain",
+            "assassin"
+      ],
+      "player2": [
+            "contessa",
+            "peasant",
+            "contessa"
+      ],
+      "player3": [
+            "inquisitor",
+            "duke",
+            "captain"
+      ],
+      "player4": [
+            "duke",
+            "embassador",
+            "embassador"
+      ],
+      "player5": [
+            "assassin",
+            "assassin",
+            "inquisitor"
+      ]
+}{
+      "duke": 3,
+      "captain": 3,
+      "embassador": 3,
+      "assassin": 2,
+      "contessa": 3,
+      "inquisitor": 2,
+      "peasant": 4
+}

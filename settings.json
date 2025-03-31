@@ -1,0 +1,118 @@
+{
+    "game_data":{
+      "influences": 3,
+      "total_influences": 35,
+      "characters": {
+        "duke": 5,
+        "captain": 5,
+        "embassador": 5,
+        "assassin": 5,
+        "contessa": 5,
+        "inquisitor": 5,
+        "peasant": 5
+      },
+      "cheatsheet": {
+        "duke": {
+          "tax": "collect 15 coins",
+          "block foreign aid": "block other player to use foreign aid",
+          "exploitation": "Cursed duke only. Collect 10 coins from bank, collect 5 coins from players who have less influences than you"
+        },
+        "captain": {
+          "steal": "steal 7 coins from selected player. Can be blocked by captain and ambassador",
+          "robbery": "Cursed captain only. Steal 5 coins from each player, there is 25% chance to reveal other player's influence"
+        },
+        "minister": {
+          "exchange": "change your influences from a deck"
+        },
+        "assassin": {
+          "assasination": "assasinate selected player's influence. Can be blocked by contessa"
+        },
+        "contessa": {
+          "no actions exist": "no actions exist"
+        },
+        "inquisitor": {
+          "punishment": "reveal inquisitor influence and select one player. If selected player has cursed influence, selected player should pay 20 coins to bank or lose cursed",
+          "genocide": "un-specified"
+        },
+        "governmnet": {
+          "martial law": "Exchange all of influences from deck. Influences cannot be peasant, also all influences should be different. Lose government synergy after use",
+          "declare": "Select one player and declare either options",
+          "declare_option":{
+            "war": "Declare war to other player. Player within war cannot do neither exchange nor reciprocity, cannot collect money from the bank. Declare war only maintained while government synergy exist",
+            "peace": "Declare peace to other player. This only works to player within war, which end the war"
+          }
+        },
+        "judgements": {
+          "god's bless": "Select one influences to change scared state. If God's bless used to cursed influence, cursed statment immediately removed",
+          "sacrifice": "Select one influence to sacrifice and reveal other player's influence. If sacrifice scared influence, reveal other player's 2 influences. Lose judgements synergy after use"
+        },
+        "grand_dukes": {
+          "abuse of power": "collect 50 coins from bank. This only can used by once",
+          "duty of pay tax": "collect 20 coins from bank. Player with lower coin than you should pay 20% of their coins"
+        },
+        "embassador": {
+          "severance": "block other player to exchange influences from deck",
+          "reciprocity": "Ask players to exchange influences. If somebody respond, that 2 players exchange their influence together"
+        },
+        "headquater": {
+          "artilary support": "Select 1 player to get shoot of artilary. selected player lose one influence and 30 coins.",
+          "war crime": "Collect 35 coins from selected player. Only player with less influence and coins than you can be selected. Can be blocked by government and embassador"
+        },
+        "marchesa": {
+          "marchese's rank": "collect 5 coins from players who don't have influence, duke.",
+          "guard knights": "select one player, including player self, to be protected from any action affect to player's coin or influences. Exclude punishment and sacrifise"
+            
+
+
+        }
+      
+      },
+      "character_state": {
+        "cursed": 5
+  },
+      "synergy": {
+        "fullhouse": {
+          "3P": "government",
+          "3I": "judgements",
+          "3D": "grand_dukes",
+          "3M": "Embassador",
+          "3Ca": "headquarter",
+          "3Co": "marchesa",
+          "3A": "mercenary"
+        }
+      },
+      "actions": {
+        "money_in": {
+          "income": 3,
+          "foreign_aid": 6,
+          "steal": 7,
+          "tax": 15
+        },
+        "money_out": {
+          "assassination": 10,
+          "punishment": 30,
+          "coup": 50,
+          "martial_law": 30,
+          "conscription_order": 15
+        },
+        "not_money": [
+          "exchange",
+          "block_steal",
+          "block_assassination",
+          "challenge"
+        ],
+        "action_list": {
+          "normal": {
+            "1": "Income",
+            "2": "Coup",
+            "3": "Foreign aid",
+            "4": "tax",
+            "5": "steal",
+            "6": "assassinate",
+            "7": "exchange",
+            "8": "punishment"
+          }
+        }
+      }
+    }
+}
