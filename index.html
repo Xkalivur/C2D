@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Coup 2</title>
-        <link rel="stylesheet" href="/C2D/static/style.css">
+        <title>Index</title>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <py-env>
+            - paths:
+                -/app.py
+        </py-env>
     </head>
     <body>
 
-        <h1 style="text-align:center;"><br><br><br><br><br><br>Coup 2</h1><br><br>
+        <h1 style="text-align:center;"><br><br><br><br><br><br>Press button to start</h1><br><br>
 
-        <button class="centre normalbutton" onclick="window.location.href='/C2D/templates/create'">Create room</button><br>
-        <button class="centre normalbutton" onclick="window.location.href='/C2D/templates/join';">Join room</button> 
+        <button class="centre normalbutton" onclick="<py-script>
+            start()
+            </py-script>">Activate</button><br>
 
     </body>
 </html>
-
-<!--see https://www.geeksforgeeks.org/flask-rendering-templates/-->
