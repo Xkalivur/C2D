@@ -4,18 +4,16 @@
         <title>Index</title>
         <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-        <py-env>
-            - paths:
-                -/app.py
-        </py-env>
     </head>
     <body>
 
         <h1 style="text-align:center;"><br><br><br><br><br><br>Press button to start</h1><br><br>
 
         <button class="centre normalbutton" onclick="<py-script>
-            start()
-            </py-script>">Activate</button><br>
+        import subprocess
+
+        subprocess.run(['python app.py','-l'])
+        </py-script>">Activate</button>
 
     </body>
 </html>
